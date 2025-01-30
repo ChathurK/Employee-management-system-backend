@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@CrossOrigin(origins = "https://radiant-bunny-0aa9a0.netlify.app")
+@CrossOrigin(origins = "http://localhost:3001")
 @AllArgsConstructor
 @RestController
 @RequestMapping("/api/employees")
