@@ -40,7 +40,7 @@ public class EmployeeController {
     public ResponseEntity<List<EmployeeDto>> getAllEmployees() {
         List<EmployeeDto> employees = employeeService.getAllEmployees();
         return ResponseEntity.ok()
-                .cacheControl(CacheControl.noCache())  // ✅ Forces fresh data every time
+                .cacheControl(CacheControl.noCache())  // Forces fresh data every time
                 .body(employees);
     }
 
